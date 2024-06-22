@@ -6,7 +6,7 @@
 /*   By: kfukuhar <kfukuhar@student.42.jp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 20:10:35 by kfukuhar          #+#    #+#             */
-/*   Updated: 2024/05/31 19:06:21 by kfukuhar         ###   ########.fr       */
+/*   Updated: 2024/06/22 14:30:12 by kfukuhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ int	ft_fillchar(t_string *t_str, char c)
 		t_str->str = (char *)malloc(t_str->capa * sizeof(char));
 		if (t_str->str == NULL)
 		{
-			free(t_str);
+			free(str_ptr);
 			return (MALLOC_ERROR);
 		}
 		i = 0;
